@@ -5,8 +5,11 @@
 <title>Bioshield | All-Natural Bug Repellent</title>
 <link rel="icon" href="/Images/ShelleyBevinsinctablogo.png" type="png">
 <link rel="stylesheet" href="style.css">
-    </head>
+    
+</head>
 <body>
+    
+    
     <br>
     <nav class="main-nav">
         <a href="About.html">About</a>   
@@ -15,7 +18,32 @@
     </nav>
     <br>
     
-<img src="/images/ShelleyBevinsinclogo.jpg" Width="250">
+<section class="hero">
+        <div class="hero-content">
+            <h1 class="hidden" style="--delay: 0s;">Welcome to BioShield</h1>
+            <p class="hidden" style="--delay: 0.3s;"><em>Strong</em> on Bugs, <em>Gentle</em> on You.</p>
+        
+        </div>
+    
+    
+    
+    
+    
+    
+    </section>
 
+
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
+</script>
 </body>
     </html>
