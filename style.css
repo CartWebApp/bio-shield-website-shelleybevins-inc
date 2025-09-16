@@ -1,3 +1,6 @@
+
+
+
 .main-nav {
     display: flex;
     width: 100%;
@@ -25,7 +28,7 @@
 }
 
 .hero {
-  height: 100vh; /* full viewport height */
+  height: 100vh; 
   background: url("/Images/visualofproducts.jpg") no-repeat center center/cover;
   background-attachment: fixed;
   display: flex;
@@ -44,7 +47,7 @@
 }
 
 .hero-content {
-  position: relative; /* keeps text above overlay */
+  position: relative; 
   z-index: 1;
 }
 
@@ -57,7 +60,7 @@
 }
 
 .section {
-  min-height: 100vh; /* each section fills the screen */
+  min-height: 100vh; 
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -75,4 +78,7 @@
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+.center {
+text-align: center;
 }
