@@ -1,65 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bioshield | All-Natural Bug Repellent</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bioshield | All-Natural Bug Repellent</title>
 <link rel="icon" href="/Images/ShelleyBevinsinctablogo.png" type="png">
 <link rel="stylesheet" href="style.css">
-    
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-   
-   <section class="logoherobackground">
-    <section class="logohero">
-      
-    </section>
-   </section>
-
-    <nav class="main-nav">
-      <a href="About.html">About</a>   
-      <a href="products.html">Products</a>   
-      <a href="contacts.html">Contact</a>
-      
-      
-      <div class="dropdown-container">
-        <section>Support Us</section>
-        <div class="dropdown-content">
-          <a href="donate.html">Donate</a>
-          <a href="volunteer.html">Volunteer</a>
-          <a href="sponsor.html">Sponsor</a>
-        </div>
+<header>
+  <section class="logoherobackground">
+    <section class="logohero"></section>
+  </section>
+  
+  <nav class="main-nav">
+    <a href="About.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contacts.html">Contact</a>
+    <div class="dropdown-container">
+      <section tabindex="0"> Support Us</section>
+      <div class="dropdown-content">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="sponsor.html">Sponsor</a>
       </div>
-    </nav>
-  </header>
-  
-  
-   
-    
+    </div>
+  </nav>
+</header>
+
 <section class="hero">
-        <section class="hero-content">
-            <h1 class="hidden" style="--delay: 0s;">Welcome to BioShield</h1>
-            <p class="hidden" style="--delay: 0.3s;"><em>Strong</em> on Bugs, <em>Gentle</em> on You.</p>
-        <p></p>
-        </section>
-    </section>
+  <section class="hero-content">
+    <h1 class="hidden" style="--delay: 0s;">Welcome to BioShield</h1>
+    <p class="hidden" style="--delay: 0.3s;"><em>Strong</em> on Bugs, <em>Gentle</em> on You.</p>
+    <a href="products.html" class="btn hidden" style="--delay: 0.6s;">Shop Now</a>
+  </section>
+  
+  <!-- Scrolling Reviews -->
+  <div class="reviews-wrapper">
+    <div class="reviews-track">
+      <div class="review-box">"Love this — keeps bugs away and smells great!" — A.</div>
+      <div class="review-box">"Works better than others I've tried." — M.</div>
+      <div class="review-box">"Gentle on my skin and effective." — R.</div>
+      <div class="review-box">"Fast shipping & lovely packaging." — S.</div>
+      <div class="review-box">"My kids love it — no tears!" — T.</div>
+    </div>
+  </div>
+</section>
 
 <main>
+  <div class="main-content">
+    <h2 class="hidden" style="--delay: 0s;">Natural Protection You Can Trust</h2>
+    <p class="hidden" style="--delay: 0.2s;">Experience the power of nature with our scientifically-formulated, family-safe bug repellent.</p>
+  </div>
   
+  <!-- Scrolling Products Section -->
+  <div class="products-section">
+    <h3 class="hidden" style="--delay: 0.4s;">Our Products</h3>
+    <div class="products-wrapper">
+      <div class="products-track">
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>BioShield Spray</h4>
+          <p>$24.99</p>
+          <span class="product-tag">Best Seller</span>
+        </div>
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>Family Pack</h4>
+          <p>$49.99</p>
+          <span class="product-tag">Value</span>
+        </div>
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>Travel Size</h4>
+          <p>$12.99</p>
+          <span class="product-tag">Portable</span>
+        </div>
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>Kids Formula</h4>
+          <p>$19.99</p>
+          <span class="product-tag">Gentle</span>
+        </div>
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>Extra Strength</h4>
+          <p>$29.99</p>
+          <span class="product-tag">Maximum</span>
+        </div>
+        <!-- Duplicate for seamless scroll -->
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>BioShield Spray</h4>
+          <p>$24.99</p>
+          <span class="product-tag">Best Seller</span>
+        </div>
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>Family Pack</h4>
+          <p>$49.99</p>
+          <span class="product-tag">Value</span>
+        </div>
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>Travel Size</h4>
+          <p>$12.99</p>
+          <span class="product-tag">Portable</span>
+        </div>
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>Kids Formula</h4>
+          <p>$19.99</p>
+          <span class="product-tag">Gentle</span>
+        </div>
+        <div class="product-box">
+          <div class="product-image"></div>
+          <h4>Extra Strength</h4>
+          <p>$29.99</p>
+          <span class="product-tag">Maximum</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
+
+// Add smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
   });
-
-  document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
+});
 </script>
 </body>
-    </html>
+</html>
