@@ -1,30 +1,152 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bioshield | About Us</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bioshield | About Us</title>
 <link rel="icon" href="/Images/ShelleyBevinsinctablogo.png" type="png">
 <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <header>
-            <nav class="main-nav">
-                <a href="index.html">Home</a>   
-                <a href="products.html">Products</a>   
-                <a href="Contacts.html">Contact</a>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <section class="logoherobackground">
+    <section class="logohero"></section>
+  </section>
+  
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contacts.html">Contact</a>
+    
+    <div class="dropdown-container">
+      <section tabindex="0">Support Us</section>
+      <div class="dropdown-content">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="sponsor.html">Sponsor</a>
+      </div>
+    </div>
+  </nav>
+</header>
 
-                 <div class="dropdown-container">
-        <section>Support Us</section>
-        <div class="dropdown-content">
-          <a href="donate.html">Donate</a>
-          <a href="volunteer.html">Volunteer</a>
-          <a href="sponsor.html">Sponsor</a>
+<!-- About Hero Section -->
+<section class="about-hero">
+  <div class="hero-content">
+    <h1 class="hidden" style="--delay: 0s;">About BioShield</h1>
+    <p class="hidden" style="--delay: 0.3s;">Protecting families naturally since day one</p>
+  </div>
+</section>
+
+<main class="about-main">
+  <!-- Our Story Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2 class="hidden" style="--delay: 0.1s;">Our Story</h2>
+        <p class="hidden" style="--delay: 0.3s;">
+          Founded with a simple mission: to create effective, natural bug protection that families can trust. 
+          We believe that staying protected shouldn't mean exposing yourself to harsh chemicals.
+        </p>
+        <p class="hidden" style="--delay: 0.5s;">
+          Our journey began when our founder, searching for a safe solution for their own family, 
+          discovered the power of natural essential oils and plant-based ingredients. What started as a 
+          personal quest became a passion to share this natural protection with families everywhere.
+        </p>
+      </div>
+      <div class="about-image">
+        <div class="image-placeholder hidden" style="--delay: 0.4s;">
+          <!-- Add your company/founder image here -->
         </div>
       </div>
-            </nav>
-        </header>
-        
-    </body>
+    </div>
+  </section>
+
+  <!-- Our Mission Section -->
+  <section class="about-section mission-section">
+    <div class="about-content reverse">
+      <div class="about-image">
+        <div class="image-placeholder hidden" style="--delay: 0.4s;">
+          <!-- Add your mission/values image here -->
+        </div>
+      </div>
+      <div class="about-text">
+        <h2 class="hidden" style="--delay: 0.1s;">Our Mission</h2>
+        <p class="hidden" style="--delay: 0.3s;">
+          To provide families with safe, effective, and natural bug protection solutions that don't 
+          compromise on performance or safety. We're committed to using only the finest natural 
+          ingredients that are gentle on skin but tough on bugs.
+        </p>
+        <div class="mission-points hidden" style="--delay: 0.5s;">
+          <div class="mission-point">
+            <h4>🌿 Natural Ingredients</h4>
+            <p>Only the finest plant-based and essential oil ingredients</p>
+          </div>
+          <div class="mission-point">
+            <h4>👨‍👩‍👧‍👦 Family Safe</h4>
+            <p>Gentle formulations safe for children and sensitive skin</p>
+          </div>
+          <div class="mission-point">
+            <h4>🛡️ Proven Effective</h4>
+            <p>Scientifically tested to provide reliable protection</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="about-section">
+    <div class="why-choose-us">
+      <h2 class="hidden" style="--delay: 0.1s;">Why Choose BioShield?</h2>
+      <div class="features-grid">
+        <div class="feature-card hidden" style="--delay: 0.2s;">
+          <div class="feature-icon">🌱</div>
+          <h3>All Natural</h3>
+          <p>Made with carefully selected natural ingredients and essential oils</p>
+        </div>
+        <div class="feature-card hidden" style="--delay: 0.3s;">
+          <div class="feature-icon">🧪</div>
+          <h3>Scientifically Tested</h3>
+          <p>Rigorously tested for effectiveness and safety in independent labs</p>
+        </div>
+        <div class="feature-card hidden" style="--delay: 0.4s;">
+          <div class="feature-icon">💚</div>
+          <h3>Eco-Friendly</h3>
+          <p>Sustainable packaging and environmentally responsible ingredients</p>
+        </div>
+        <div class="feature-card hidden" style="--delay: 0.5s;">
+          <div class="feature-icon">⭐</div>
+          <h3>Customer Loved</h3>
+          <p>Thousands of satisfied customers trust BioShield for their families</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="about-cta">
+    <div class="cta-content hidden" style="--delay: 0.2s;">
+      <h2>Ready to Experience Natural Protection?</h2>
+      <p>Join thousands of families who have made the switch to BioShield's natural bug protection.</p>
+      <a href="products.html" class="btn">Shop Our Products</a>
+    </div>
+  </section>
+</main>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
+</script>
+</body>
 </html>

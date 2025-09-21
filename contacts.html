@@ -1,37 +1,220 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bioshield | Contact Us</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bioshield | Contact Us</title>
 <link rel="icon" href="/Images/ShelleyBevinsinctablogo.png" type="png">
 <link rel="stylesheet" href="style.css">
-    </head>
-    
-    
-    
-    <body>
-        <header>
-            <nav class="main-nav">
-                <a href="About.html">About</a>   
-                <a href="products.html">Products</a>   
-                <a href="index.html">Home</a>
-                <a href="contacts">Contacts</a>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <section class="logoherobackground">
+    <section class="logohero"></section>
+  </section>
+  
+  <nav class="main-nav">
+    <a href="About.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="index.html">Home</a>
+   
+    <div class="dropdown-container">
+      <section tabindex="0">Support Us</section>
+      <div class="dropdown-content">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="sponsor.html">Sponsor</a>
+      </div>
+    </div>
+  </nav>
+</header>
 
-                 <div class="dropdown-container">
-        <section>Support Us</section>
-        <div class="dropdown-content">
-          <a href="donate.html">Donate</a>
-          <a href="volunteer.html">Volunteer</a>
-          <a href="sponsor.html">Sponsor</a>
+<!-- Contact Hero Section -->
+<section class="contact-hero">
+  <div class="hero-content">
+    <h1 class="hidden" style="--delay: 0s;">Get In Touch</h1>
+    <p class="hidden" style="--delay: 0.3s;">We'd love to hear from you. Send us a message!</p>
+  </div>
+</section>
+
+<main class="contact-main">
+  <!-- Contact Form & Info Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <div class="contact-form-card hidden" style="--delay: 0.2s;">
+          <h2>Send Us a Message</h2>
+          <p>Have questions, feedback, or need support? We're here to help!</p>
+          
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="product">Product Question</option>
+                <option value="feedback">Feedback</option>
+                <option value="complaint">Complaint</option>
+                <option value="support">Technical Support</option>
+                <option value="wholesale">Wholesale/Business</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
         </div>
       </div>
-            </nav>
-        </header>
-       
-        <p>If you have any complaints or feedback, please let us know.</p>
-        <p>Feedback</p>
-       <input>
+      
+      <!-- Contact Information -->
+      <div class="contact-info-wrapper">
+        <div class="contact-info-card hidden" style="--delay: 0.4s;">
+          <h3>Contact Information</h3>
+          
+          <div class="info-item">
+            <div class="info-icon">📧</div>
+            <div class="info-content">
+              <h4>Email Us</h4>
+              <p>support@bioshield.com</p>
+              <p>info@bioshield.com</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-content">
+              <h4>Call Us</h4>
+              <p>1-800-BIO-SHIELD</p>
+              <p>Mon-Fri, 9AM-6PM EST</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-content">
+              <h4>Visit Us</h4>
+              <p>123 Natural Way</p>
+              <p>Green Valley, CA 12345</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">⏰</div>
+            <div class="info-content">
+              <h4>Response Time</h4>
+              <p>We typically respond within</p>
+              <p><strong>24 hours</strong></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Quick Links -->
+        <div class="faq-links hidden" style="--delay: 0.6s;">
+          <h3>Quick Help</h3>
+          <div class="faq-item">
+            <h4>🛒 Order Questions</h4>
+            <p>Check our shipping and return policies</p>
+          </div>
+          <div class="faq-item">
+            <h4>🧪 Product Safety</h4>
+            <p>Learn about our natural ingredients</p>
+          </div>
+          <div class="faq-item">
+            <h4>👶 Kid-Safe Usage</h4>
+            <p>Guidelines for children and families</p>
+          </div>
+          <div class="faq-item">
+            <h4>🌱 Ingredients Info</h4>
+            <p>Full list of natural components</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media & Additional Contact -->
+  <section class="contact-social">
+    <div class="social-content hidden" style="--delay: 0.8s;">
+      <h2>Stay Connected</h2>
+      <p>Follow us for tips, updates, and natural living inspiration</p>
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <div class="social-icon">📘</div>
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="social-link">
+          <div class="social-icon">📷</div>
+          <span>Instagram</span>
+        </a>
+        <a href="#" class="social-link">
+          <div class="social-icon">🐦</div>
+          <span>Twitter</span>
+        </a>
+        <a href="#" class="social-link">
+          <div class="social-icon">💼</div>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
+
+// Form submission handling
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Get form data
+  const formData = new FormData(this);
+  const submitBtn = this.querySelector('.submit-btn');
+  
+  // Show loading state
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+  
+  // Simulate form submission (replace with your actual form handling)
+  setTimeout(() => {
+    submitBtn.textContent = 'Message Sent!';
+    submitBtn.style.background = 'var(--light-green)';
     
-    </body>
+    // Reset form after 2 seconds
+    setTimeout(() => {
+      this.reset();
+      submitBtn.textContent = 'Send Message';
+      submitBtn.disabled = false;
+      submitBtn.style.background = '';
+    }, 2000);
+  }, 1000);
+});
+</script>
+</body>
 </html>

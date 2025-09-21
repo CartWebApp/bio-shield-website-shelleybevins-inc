@@ -1,31 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bioshield | All-Natural Bug Repellent</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bioshield | Support Our Mission</title>
 <link rel="icon" href="/Images/ShelleyBevinsinctablogo.png" type="png">
 <link rel="stylesheet" href="style.css">
-    
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="main-nav">
-      <a href="About.html">About</a>   
-      <a href="products.html">Products</a>   
-      <a href="contacts.html">Contact</a>
-      <a href="index.html">Home</a>
+<header>
+  <section class="logoherobackground">
+    <section class="logohero"></section>
+  </section>
   
+  <nav class="main-nav">
+    <a href="About.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contacts.html">Contact</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown-container">
+      <section tabindex="0">Support Us</section>
+      <div class="dropdown-content">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="sponsor.html">Sponsor</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Donate Hero Section -->
+<section class="donate-hero">
+  <div class="hero-content">
+    <h1 class="hidden" style="--delay: 0s;">Support Our Mission</h1>
+    <p class="hidden" style="--delay: 0.3s;">Help us make natural protection accessible to everyone</p>
+  </div>
+</section>
+
+<main class="donate-main">
+  <!-- Mission Impact Section -->
+  <section class="impact-section">
+    <div class="impact-content">
+      <h2 class="hidden" style="--delay: 0.1s;">Your Impact Matters</h2>
+      <p class="hidden" style="--delay: 0.3s;">
+        Every donation helps us research, develop, and distribute natural bug protection solutions 
+        to families who need them most. Together, we can create a world where everyone has access 
+        to safe, effective, and natural protection.
+      </p>
       
-      <div class="dropdown-container">
-        <section>Support Us</section>
-        <div class="dropdown-content">
-          <a href="donate.html">Donate</a>
-          <a href="volunteer.html">Volunteer</a>
-          <a href="sponsor.html">Sponsor</a>
+      <div class="impact-stats">
+        <div class="stat-card hidden" style="--delay: 0.4s;">
+          <div class="stat-icon">👨‍👩‍👧‍👦</div>
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">Families Protected</div>
+        </div>
+        <div class="stat-card hidden" style="--delay: 0.5s;">
+          <div class="stat-icon">🌱</div>
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Natural Ingredients</div>
+        </div>
+        <div class="stat-card hidden" style="--delay: 0.6s;">
+          <div class="stat-icon">🔬</div>
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Years of Research</div>
+        </div>
+        <div class="stat-card hidden" style="--delay: 0.7s;">
+          <div class="stat-icon">🌍</div>
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Countries Served</div>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </section>
+
+  <!-- Donation Options Section -->
+  <section class="donation-section">
+    <div class="donation-content">
+      <h2 class="hidden" style="--delay: 0.2s;">Choose Your Donation</h2>
+      <p class="hidden" style="--delay: 0.4s;">Select an amount that works for you. Every contribution makes a difference!</p>
+      
+      <div class="donation-options">
+        <!-- Donation Amount Cards -->
+        <div class="donation-card hidden" style="--delay: 0.5s;">
+          <div class="donation-amount">$25</div>
+          <h3>Supporter</h3>
+          <ul>
+            <li>✅ Helps fund ingredient research</li>
+            <li>✅ Supports product testing</li>
+            <li>✅ Monthly impact report</li>
+          </ul>
+          <button class="donate-btn" data-amount="25">Donate $25</button>
+        </div>
+        
+        <div class="donation-card featured hidden" style="--delay: 0.6s;">
+          <div class="popular-badge">Most Popular</div>
+          <div class="donation-amount">$50</div>
+          <h3>Advocate</h3>
+          <ul>
+            <li>✅ Provides products to families in need</li>
+            <li>✅ Funds educational materials</li>
+            <li>✅ Priority access to new products</li>
+            <li>✅ Quarterly donor appreciation gifts</li>
+          </ul>
+          <button class="donate-btn" data-amount="50">Donate $50</button>
+        </div>
+        
+        <div class="donation-card hidden" style="--delay: 0.7s;">
+          <div class="donation-amount">$100</div>
+          <h3>Champion</h3>
+          <ul>
+            <li>✅ Sponsors a family for 6 months</li>
+            <li>✅ Supports community outreach</li>
+            <li>✅ Exclusive donor events</li>
+            <li>✅ Recognition on website</li>
+          </ul>
+          <button class="donate-btn" data-amount="100">Donate $100</button>
+        </div>
+        
+        <div class="donation-card hidden" style="--delay: 0.8s;">
+          <div class="donation-amount">Custom</div>
+          <h3>Your Choice</h3>
+          <div class="custom-amount">
+            <input type="number" id="customAmount" placeholder="Enter amount" min="1">
+            <span class="currency">$</span>
+          </div>
+          <p>Choose your own donation amount</p>
+          <button class="donate-btn custom-btn" data-amount="custom">Donate Custom Amount</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ways to Help Section -->
+  <section class="help-ways-section">
+    <div class="help-content">
+      <h2 class="hidden" style="--delay: 0.2s;">Other Ways to Support</h2>
+      
+      <div class="help-options">
+        <div class="help-card hidden" style="--delay: 0.4s;">
+          <div class="help-icon">🤝</div>
+          <h3>Volunteer</h3>
+          <p>Join our team of volunteers and help distribute products to communities in need.</p>
+          <a href="volunteer.html" class="help-link">Learn More</a>
+        </div>
+        
+        <div class="help-card hidden" style="--delay: 0.5s;">
+          <div class="help-icon">🏢</div>
+          <h3>Corporate Sponsorship</h3>
+          <p>Partner with us to make a larger impact through corporate social responsibility.</p>
+          <a href="sponsor.html" class="help-link">Become a Sponsor</a>
+        </div>
+        
+        <div class="help-card hidden" style="--delay: 0.6s;">
+          <div class="help-icon">📢</div>
+          <h3>Spread the Word</h3>
+          <p>Share our mission with friends and family. Follow us on social media.</p>
+          <a href="contacts.html" class="help-link">Share Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparency Section -->
+  <section class="transparency-section">
+    <div class="transparency-content hidden" style="--delay: 0.3s;">
+      <h2>How We Use Your Donation</h2>
+      <div class="fund-breakdown">
+        <div class="breakdown-item">
+          <div class="breakdown-bar">
+            <div class="breakdown-fill" style="width: 65%; background: var(--light-green);"></div>
+          </div>
+          <div class="breakdown-info">
+            <span class="breakdown-label">Research & Development</span>
+            <span class="breakdown-percent">65%</span>
+          </div>
+        </div>
+        
+        <div class="breakdown-item">
+          <div class="breakdown-bar">
+            <div class="breakdown-fill" style="width: 20%; background: var(--accent-orange);"></div>
+          </div>
+          <div class="breakdown-info">
+            <span class="breakdown-label">Community Outreach</span>
+            <span class="breakdown-percent">20%</span>
+          </div>
+        </div>
+        
+        <div class="breakdown-item">
+          <div class="breakdown-bar">
+            <div class="breakdown-fill" style="width: 10%; background: var(--primary-green);"></div>
+          </div>
+          <div class="breakdown-info">
+            <span class="breakdown-label">Educational Programs</span>
+            <span class="breakdown-percent">10%</span>
+          </div>
+        </div>
+        
+        <div class="breakdown-item">
+          <div class="breakdown-bar">
+            <div class="breakdown-fill" style="width: 5%; background: #666;"></div>
+          </div>
+          <div class="breakdown-info">
+            <span class="breakdown-label">Administrative Costs</span>
+            <span class="breakdown-percent">5%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
+
+// Donation button handling
+document.querySelectorAll('.donate-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const amount = this.dataset.amount;
+    let donationAmount;
+    
+    if (amount === 'custom') {
+      donationAmount = document.getElementById('customAmount').value;
+      if (!donationAmount || donationAmount < 1) {
+        alert('Please enter a valid donation amount');
+        return;
+      }
+    } else {
+      donationAmount = amount;
+    }
+    
+    // Show loading state
+    this.textContent = 'Processing...';
+    this.disabled = true;
+    
+    // Simulate donation processing (replace with actual payment processing)
+    setTimeout(() => {
+      alert(`Thank you for your $${donationAmount} donation! This is a demo - integrate with your payment processor.`);
+      this.textContent = this.textContent.replace('Processing...', 'Donate $' + donationAmount);
+      this.disabled = false;
+    }, 2000);
+  });
+});
+
+// Custom amount input formatting
+document.getElementById('customAmount').addEventListener('input', function() {
+  const value = this.value;
+  const btn = document.querySelector('.custom-btn');
+  if (value && value > 0) {
+    btn.textContent = `Donate $${value}`;
+  } else {
+    btn.textContent = 'Donate Custom Amount';
+  }
+});
+</script>
 </body>
+</html>
