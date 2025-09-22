@@ -30,7 +30,6 @@
   </nav>
 </header>
 
-<!-- Contact Hero Section -->
 <section class="contact-hero">
   <div class="hero-content">
     <h1 class="hidden" style="--delay: 0s;">Get In Touch</h1>
@@ -39,10 +38,8 @@
 </section>
 
 <main class="contact-main">
-  <!-- Contact Form & Info Section -->
   <section class="contact-section">
     <div class="contact-container">
-      <!-- Contact Form -->
       <div class="contact-form-wrapper">
         <div class="contact-form-card hidden" style="--delay: 0.2s;">
           <h2>Send Us a Message</h2>
@@ -82,7 +79,6 @@
         </div>
       </div>
       
-      <!-- Contact Information -->
       <div class="contact-info-wrapper">
         <div class="contact-info-card hidden" style="--delay: 0.4s;">
           <h3>Contact Information</h3>
@@ -124,7 +120,6 @@
           </div>
         </div>
         
-        <!-- FAQ Quick Links -->
         <div class="faq-links hidden" style="--delay: 0.6s;">
           <h3>Quick Help</h3>
           <div class="faq-item">
@@ -148,7 +143,6 @@
     </div>
   </section>
 
-  <!-- Social Media & Additional Contact -->
   <section class="contact-social">
     <div class="social-content hidden" style="--delay: 0.8s;">
       <h2>Stay Connected</h2>
@@ -189,24 +183,22 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 
-// Form submission handling
 document.querySelector('.contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
   
-  // Get form data
   const formData = new FormData(this);
   const submitBtn = this.querySelector('.submit-btn');
   
-  // Show loading state
+
   submitBtn.textContent = 'Sending...';
   submitBtn.disabled = true;
   
-  // Simulate form submission (replace with your actual form handling)
+ 
   setTimeout(() => {
     submitBtn.textContent = 'Message Sent!';
     submitBtn.style.background = 'var(--light-green)';
     
-    // Reset form after 2 seconds
+
     setTimeout(() => {
       this.reset();
       submitBtn.textContent = 'Send Message';

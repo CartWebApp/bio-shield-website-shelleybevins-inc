@@ -30,7 +30,6 @@
   </nav>
 </header>
 
-<!-- Volunteer Hero Section -->
 <section class="volunteer-hero">
   <div class="hero-content">
     <h1 class="hidden" style="--delay: 0s;">Join Our Mission</h1>
@@ -39,7 +38,6 @@
 </section>
 
 <main class="volunteer-main">
-  <!-- Why Volunteer Section -->
   <section class="why-volunteer-section">
     <div class="why-volunteer-content">
       <h2 class="hidden" style="--delay: 0.1s;">Why Volunteer With BioShield?</h2>
@@ -84,14 +82,12 @@
     </div>
   </section>
 
-  <!-- Volunteer Opportunities Section -->
   <section class="opportunities-section">
     <div class="opportunities-content">
       <h2 class="hidden" style="--delay: 0.2s;">Volunteer Opportunities</h2>
       <p class="hidden" style="--delay: 0.4s;">Find the perfect way to contribute based on your skills, interests, and availability.</p>
       
       <div class="opportunity-cards">
-        <!-- Community Outreach -->
         <div class="opportunity-card hidden" style="--delay: 0.5s;">
           <div class="opportunity-header">
             <div class="opportunity-icon">🏘️</div>
@@ -113,7 +109,6 @@
           <button class="volunteer-btn" data-opportunity="Community Outreach">Apply for This Role</button>
         </div>
 
-        <!-- Digital Marketing -->
         <div class="opportunity-card hidden" style="--delay: 0.6s;">
           <div class="opportunity-header">
             <div class="opportunity-icon">📱</div>
@@ -135,7 +130,6 @@
           <button class="volunteer-btn" data-opportunity="Digital Marketing">Apply for This Role</button>
         </div>
 
-        <!-- Research & Education -->
         <div class="opportunity-card hidden" style="--delay: 0.7s;">
           <div class="opportunity-header">
             <div class="opportunity-icon">🔬</div>
@@ -157,7 +151,6 @@
           <button class="volunteer-btn" data-opportunity="Research & Education">Apply for This Role</button>
         </div>
 
-        <!-- Event Planning -->
         <div class="opportunity-card hidden" style="--delay: 0.8s;">
           <div class="opportunity-header">
             <div class="opportunity-icon">🎉</div>
@@ -179,7 +172,6 @@
           <button class="volunteer-btn" data-opportunity="Event Planning">Apply for This Role</button>
         </div>
 
-        <!-- Administrative Support -->
         <div class="opportunity-card hidden" style="--delay: 0.9s;">
           <div class="opportunity-header">
             <div class="opportunity-icon">📋</div>
@@ -201,7 +193,6 @@
           <button class="volunteer-btn" data-opportunity="Administrative Support">Apply for This Role</button>
         </div>
 
-        <!-- Custom Opportunity -->
         <div class="opportunity-card custom-card hidden" style="--delay: 1.0s;">
           <div class="opportunity-header">
             <div class="opportunity-icon">✨</div>
@@ -227,7 +218,6 @@
     </div>
   </section>
 
-  <!-- Volunteer Application Section -->
   <section class="application-section">
     <div class="application-content">
       <h2 class="hidden" style="--delay: 0.2s;">Ready to Get Started?</h2>
@@ -293,7 +283,6 @@
           </form>
         </div>
         
-        <!-- Quick Stats -->
         <div class="volunteer-stats hidden" style="--delay: 0.6s;">
           <h3>Join Our Growing Community</h3>
           <div class="stat-item">
@@ -317,7 +306,6 @@
     </div>
   </section>
 
-  <!-- FAQ Section -->
   <section class="faq-section">
     <div class="faq-content">
       <h2 class="hidden" style="--delay: 0.2s;">Frequently Asked Questions</h2>
@@ -361,12 +349,10 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 
-// Volunteer opportunity button handling
 document.querySelectorAll('.volunteer-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     const opportunity = this.dataset.opportunity;
     
-    // Auto-fill the form with selected opportunity
     const interestsSelect = document.getElementById('interests');
     const optionMap = {
       'Community Outreach': 'community-outreach',
@@ -381,32 +367,27 @@ document.querySelectorAll('.volunteer-btn').forEach(btn => {
       interestsSelect.value = optionMap[opportunity];
     }
     
-    // Scroll to application form
     document.querySelector('.application-section').scrollIntoView({
       behavior: 'smooth'
     });
   });
 });
 
-// Form submission handling
 document.querySelector('.volunteer-form').addEventListener('submit', function(e) {
   e.preventDefault();
   
   const submitBtn = this.querySelector('.submit-volunteer-btn');
   const formData = new FormData(this);
   
-  // Show loading state
   submitBtn.textContent = 'Submitting...';
   submitBtn.disabled = true;
   
-  // Simulate form submission (replace with your actual form handling)
   setTimeout(() => {
     submitBtn.textContent = 'Application Submitted!';
     submitBtn.style.background = 'var(--light-green)';
     
     alert('Thank you for your interest in volunteering! We\'ll review your application and contact you within 3-5 business days.');
     
-    // Reset form after 3 seconds
     setTimeout(() => {
       this.reset();
       submitBtn.textContent = 'Submit Application';
@@ -416,21 +397,18 @@ document.querySelector('.volunteer-form').addEventListener('submit', function(e)
   }, 1500);
 });
 
-// FAQ toggle functionality
 document.querySelectorAll('.faq-question').forEach(question => {
   question.addEventListener('click', function() {
     const item = this.parentElement;
     const answer = item.querySelector('.faq-answer');
     const isOpen = item.classList.contains('open');
     
-    // Close all other FAQ items
     document.querySelectorAll('.faq-item').forEach(otherItem => {
       if (otherItem !== item) {
         otherItem.classList.remove('open');
       }
     });
     
-    // Toggle current item
     item.classList.toggle('open', !isOpen);
   });
 });

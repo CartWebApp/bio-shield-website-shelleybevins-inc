@@ -44,7 +44,6 @@
     <a href="products.html" class="btn hidden" style="--delay: 0.6s;">Shop Now</a>
   </section>
   
-  <!-- Scrolling Reviews -->
   <div class="reviews-wrapper">
     <div class="reviews-track">
       <div class="review-box">"Love this — keeps bugs away and smells great!" — A.</div>
@@ -62,7 +61,6 @@
     <p class="hidden" style="--delay: 0.2s;">Experience the power of nature with our scientifically-formulated, family-safe bug repellent.</p>
   </div>
   
-  <!-- Scrolling Products Section -->
   <div class="products-section">
     <h3 class="hidden" style="--delay: 0.4s;">Our Products</h3>
     <div class="products-wrapper">
@@ -102,7 +100,6 @@
           <span class="product-tag">Maximum</span>
           <button class="add-to-cart-btn" data-name="Extra Strength" data-price="29.99" data-image="">Add to Cart</button>
         </div>
-        <!-- Duplicate for seamless scroll -->
         <div class="product-box">
           <div class="product-image"></div>
           <h4>BioShield Spray</h4>
@@ -143,7 +140,6 @@
   </div>
 </main>
 
-<!-- Cart Modal -->
 <div class="cart-modal" id="cartModal">
   <div class="cart-modal-content">
     <div class="cart-header">
@@ -171,7 +167,6 @@
   </div>
 </div>
 
-<!-- Cart Success Notification -->
 <div class="cart-notification" id="cartNotification">
   <div class="notification-content">
     <span class="notification-icon">✅</span>
@@ -180,10 +175,8 @@
 </div>
 
 <script>
-// Cart functionality
 let cart = [];
 
-// DOM elements
 const cartBtn = document.getElementById('cartBtn');
 const cartModal = document.getElementById('cartModal');
 const closeCart = document.getElementById('closeCart');
@@ -195,7 +188,6 @@ const clearCartBtn = document.getElementById('clearCart');
 const checkoutBtn = document.getElementById('checkoutBtn');
 const cartNotification = document.getElementById('cartNotification');
 
-// Intersection Observer for animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -209,7 +201,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -219,7 +210,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Cart Modal Functions
 function openCartModal() {
   cartModal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -230,7 +220,7 @@ function closeCartModal() {
   document.body.style.overflow = 'auto';
 }
 
-// Add to cart function
+
 function addToCart(product) {
   const existingItem = cart.find(item => item.name === product.name);
   
@@ -240,7 +230,7 @@ function addToCart(product) {
     cart.push({
       ...product,
       quantity: 1,
-      id: Date.now() + Math.random() // Simple unique ID
+      id: Date.now() + Math.random() 
     });
   }
   
@@ -248,20 +238,17 @@ function addToCart(product) {
   showNotification();
 }
 
-// Remove from cart function
 function removeFromCart(productId) {
   cart = cart.filter(item => item.id !== productId);
   updateCartUI();
 }
 
-// Update cart UI
 function updateCartUI() {
   updateCartCount();
   updateCartItems();
   updateCartTotal();
 }
 
-// Update cart count
 function updateCartCount() {
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   cartCount.textContent = totalItems;
@@ -273,7 +260,6 @@ function updateCartCount() {
   }
 }
 
-// Update cart items display
 function updateCartItems() {
   if (cart.length === 0) {
     cartItems.innerHTML = `
@@ -303,7 +289,6 @@ function updateCartItems() {
   }
 }
 
-// Update quantity
 function updateQuantity(productId, change) {
   const item = cart.find(item => item.id === productId);
   if (item) {
@@ -316,13 +301,11 @@ function updateQuantity(productId, change) {
   }
 }
 
-// Update cart total
 function updateCartTotal() {
   const total = cart.reduce((sum, item) => sum + (parseFloat(item.price) * item.quantity), 0);
   cartTotal.textContent = total.toFixed(2);
 }
 
-// Show notification
 function showNotification() {
   cartNotification.classList.add('show');
   setTimeout(() => {
@@ -330,39 +313,34 @@ function showNotification() {
   }, 2000);
 }
 
-// Clear cart
 function clearCart() {
   cart = [];
   updateCartUI();
 }
 
-// Checkout function
 function checkout() {
   if (cart.length === 0) return;
   
   const total = cart.reduce((sum, item) => sum + (parseFloat(item.price) * item.quantity), 0);
   alert(`Checkout total: $${total.toFixed(2)}\n\nThis is a demo. In a real implementation, you would integrate with a payment processor like Stripe, PayPal, or similar.`);
   
-  // In a real implementation, you would redirect to a checkout page or open a payment modal
-  // For demo purposes, we'll clear the cart
   clearCart();
   closeCartModal();
 }
 
-// Event Listeners
+
 cartBtn.addEventListener('click', openCartModal);
 closeCart.addEventListener('click', closeCartModal);
 clearCartBtn.addEventListener('click', clearCart);
 checkoutBtn.addEventListener('click', checkout);
 
-// Close modal when clicking outside
 cartModal.addEventListener('click', function(e) {
   if (e.target === cartModal) {
     closeCartModal();
   }
 });
 
-// Add to cart button listeners
+
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains('add-to-cart-btn')) {
     const button = e.target;
@@ -374,7 +352,6 @@ document.addEventListener('click', function(e) {
     
     addToCart(product);
     
-    // Button feedback
     const originalText = button.textContent;
     button.textContent = 'Added!';
     button.style.background = 'var(--light-green)';
@@ -386,14 +363,12 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// Keyboard navigation
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && cartModal.style.display === 'flex') {
     closeCartModal();
   }
 });
 
-// Make functions globally available
 window.updateQuantity = updateQuantity;
 window.removeFromCart = removeFromCart;
 </script>

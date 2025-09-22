@@ -22,7 +22,6 @@
     <div class="dropdown-container">
       <section tabindex="0">Support Us</section>
       <div class="dropdown-content">
-        <a href="donate.html">Donate</a>
         <a href="volunteer.html">Volunteer</a>
         <a href="sponsor.html">Sponsor</a>
       </div>
@@ -30,7 +29,6 @@
   </nav>
 </header>
 
-<!-- Donate Hero Section -->
 <section class="donate-hero">
   <div class="hero-content">
     <h1 class="hidden" style="--delay: 0s;">Support Our Mission</h1>
@@ -39,7 +37,6 @@
 </section>
 
 <main class="donate-main">
-  <!-- Mission Impact Section -->
   <section class="impact-section">
     <div class="impact-content">
       <h2 class="hidden" style="--delay: 0.1s;">Your Impact Matters</h2>
@@ -74,14 +71,12 @@
     </div>
   </section>
 
-  <!-- Donation Options Section -->
   <section class="donation-section">
     <div class="donation-content">
       <h2 class="hidden" style="--delay: 0.2s;">Choose Your Donation</h2>
       <p class="hidden" style="--delay: 0.4s;">Select an amount that works for you. Every contribution makes a difference!</p>
       
       <div class="donation-options">
-        <!-- Donation Amount Cards -->
         <div class="donation-card hidden" style="--delay: 0.5s;">
           <div class="donation-amount">$25</div>
           <h3>Supporter</h3>
@@ -132,7 +127,6 @@
     </div>
   </section>
 
-  <!-- Ways to Help Section -->
   <section class="help-ways-section">
     <div class="help-content">
       <h2 class="hidden" style="--delay: 0.2s;">Other Ways to Support</h2>
@@ -162,7 +156,6 @@
     </div>
   </section>
 
-  <!-- Transparency Section -->
   <section class="transparency-section">
     <div class="transparency-content hidden" style="--delay: 0.3s;">
       <h2>How We Use Your Donation</h2>
@@ -225,7 +218,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 
-// Donation button handling
 document.querySelectorAll('.donate-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     const amount = this.dataset.amount;
@@ -241,11 +233,9 @@ document.querySelectorAll('.donate-btn').forEach(btn => {
       donationAmount = amount;
     }
     
-    // Show loading state
     this.textContent = 'Processing...';
     this.disabled = true;
     
-    // Simulate donation processing (replace with actual payment processing)
     setTimeout(() => {
       alert(`Thank you for your $${donationAmount} donation! This is a demo - integrate with your payment processor.`);
       this.textContent = this.textContent.replace('Processing...', 'Donate $' + donationAmount);
@@ -254,7 +244,6 @@ document.querySelectorAll('.donate-btn').forEach(btn => {
   });
 });
 
-// Custom amount input formatting
 document.getElementById('customAmount').addEventListener('input', function() {
   const value = this.value;
   const btn = document.querySelector('.custom-btn');

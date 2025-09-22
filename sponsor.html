@@ -24,13 +24,12 @@
       <div class="dropdown-content">
         <a href="donate.html">Donate</a>
         <a href="volunteer.html">Volunteer</a>
-        <a href="sponsor.html">Sponsor</a>
+        
       </div>
     </div>
   </nav>
 </header>
 
-<!-- Sponsor Hero Section -->
 <section class="sponsor-hero">
   <div class="hero-content">
     <h1 class="hidden" style="--delay: 0s;">Partner With BioShield</h1>
@@ -39,7 +38,6 @@
 </section>
 
 <main class="sponsor-main">
-  <!-- Partnership Benefits Section -->
   <section class="benefits-section">
     <div class="benefits-content">
       <h2 class="hidden" style="--delay: 0.1s;">Why Partner With Us?</h2>
@@ -74,15 +72,12 @@
       </div>
     </div>
   </section>
-
-  <!-- Sponsorship Tiers Section -->
   <section class="tiers-section">
     <div class="tiers-content">
       <h2 class="hidden" style="--delay: 0.2s;">Sponsorship Opportunities</h2>
       <p class="hidden" style="--delay: 0.4s;">Choose the partnership level that aligns with your goals and budget.</p>
       
       <div class="sponsor-tiers">
-        <!-- Bronze Tier -->
         <div class="tier-card hidden" style="--delay: 0.5s;">
           <div class="tier-header bronze">
             <div class="tier-icon">🥉</div>
@@ -101,7 +96,6 @@
           <button class="tier-btn bronze-btn">Become a Bronze Partner</button>
         </div>
         
-        <!-- Silver Tier -->
         <div class="tier-card hidden" style="--delay: 0.6s;">
           <div class="tier-header silver">
             <div class="tier-icon">🥈</div>
@@ -121,7 +115,6 @@
           <button class="tier-btn silver-btn">Become a Silver Partner</button>
         </div>
         
-        <!-- Gold Tier -->
         <div class="tier-card featured hidden" style="--delay: 0.7s;">
           <div class="popular-badge">Most Popular</div>
           <div class="tier-header gold">
@@ -142,8 +135,7 @@
           </div>
           <button class="tier-btn gold-btn">Become a Gold Partner</button>
         </div>
-        
-        <!-- Platinum Tier -->
+
         <div class="tier-card hidden" style="--delay: 0.8s;">
           <div class="tier-header platinum">
             <div class="tier-icon">💎</div>
@@ -166,12 +158,11 @@
     </div>
   </section>
 
-  <!-- Current Sponsors Section -->
+
   <section class="current-sponsors-section">
     <div class="sponsors-content">
       <h2 class="hidden" style="--delay: 0.2s;">Our Valued Partners</h2>
       
-      <!-- If you have sponsors, replace this section -->
       <div class="no-sponsors hidden" style="--delay: 0.4s;">
         <div class="no-sponsors-card">
           <div class="no-sponsors-icon">🤝</div>
@@ -190,18 +181,15 @@
         </div>
       </div>
       
-      <!-- Future sponsor logos will go here -->
       <div class="sponsor-logos hidden" style="--delay: 0.6s; display: none;">
         <div class="sponsor-logo-item">
           <div class="sponsor-placeholder">Partner Logo</div>
           <span class="sponsor-tier">Gold Partner</span>
         </div>
-        <!-- Add more sponsor logos as needed -->
       </div>
     </div>
   </section>
 
-  <!-- Partnership Process Section -->
   <section class="process-section">
     <div class="process-content">
       <h2 class="hidden" style="--delay: 0.2s;">How to Become a Partner</h2>
@@ -255,23 +243,19 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 
-// Sponsorship tier button handling
 document.querySelectorAll('.tier-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     const tierName = this.textContent;
     
-    // Show loading state
+
     this.textContent = 'Processing...';
     this.disabled = true;
     
-    // Simulate contact process (replace with actual form or redirect)
     setTimeout(() => {
       alert(`Thank you for your interest in ${tierName}! We'll contact you within 24 hours to discuss next steps.`);
       this.textContent = tierName;
       this.disabled = false;
       
-      // In a real implementation, you might redirect to a contact form or open a modal
-      // window.location.href = 'contacts.html?sponsor=' + encodeURIComponent(tierName);
     }, 1500);
   });
 });
