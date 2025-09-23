@@ -1,4 +1,5 @@
-
+/* Header & Logo */
+/* ============================= */
 .logoherobackground {
   background: linear-gradient(135deg, var(--primary-green), var(--light-green));
   padding: 2rem 0;
@@ -42,6 +43,7 @@
   box-shadow: var(--shadow-hover);
 }
 
+/* Cart Styles */
 .cart-container {
   position: relative;
 }
@@ -85,6 +87,7 @@
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
 }
 
+/* Cart Modal */
 .cart-modal {
   display: none;
   position: fixed;
@@ -294,6 +297,7 @@
   box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
 }
 
+/* Cart Notification */
 .cart-notification {
   position: fixed;
   top: 100px;
@@ -326,6 +330,7 @@
   font-weight: 600;
 }
 
+/* Product Box Updates */
 .add-to-cart-btn {
   background: linear-gradient(45deg, var(--light-green), var(--primary-green));
   color: white;
@@ -378,6 +383,7 @@
   color: var(--accent-orange);
 }
 
+/* Responsive Cart Styles */
 @media (max-width: 768px) {
   .header-container {
     padding: 0 1rem;
@@ -468,9 +474,11 @@
 }  .cta-section {
     padding: 2rem 1.5rem;
   }
+}
 
-
-
+/* ============================= */
+/* Volunteer Page Styles */
+/* ============================= */
 .volunteer-hero {
   height: 50vh;
   background: linear-gradient(135deg, #E65100, #FF9800);
@@ -498,6 +506,7 @@
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 }
 
+/* Why Volunteer Section */
 .why-volunteer-section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -567,6 +576,7 @@
   margin: 0;
 }
 
+/* Opportunities Section */
 .opportunities-section {
   padding: 4rem 2rem;
   background: white;
@@ -703,6 +713,7 @@
   box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
 }
 
+/* Application Section */
 .application-section {
   padding: 4rem 2rem;
   background: rgba(76, 175, 80, 0.05);
@@ -816,6 +827,7 @@
   box-shadow: 0 6px 25px rgba(76, 175, 80, 0.4);
 }
 
+/* Volunteer Stats */
 .volunteer-stats {
   background: white;
   padding: 2rem;
@@ -848,6 +860,7 @@
   font-weight: 500;
 }
 
+/* FAQ Section */
 .faq-section {
   padding: 4rem 2rem;
   max-width: 900px;
@@ -923,6 +936,7 @@
   line-height: 1.6;
 }
 
+/* Volunteer Page Responsive */
 @media (max-width: 1024px) {
   .opportunity-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -999,7 +1013,9 @@
   .faq-item.open .faq-answer {
     padding: 0 1.5rem 1rem 1.5rem;
   }
-}
+}/* ============================= */
+/* Modern Reset & Base */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
@@ -1028,7 +1044,9 @@ body {
   overflow-x: hidden;
 }
 
-
+/* ============================= */
+/* Header & Logo */
+/* ============================= */
 .logoherobackground {
   background: linear-gradient(135deg, var(--primary-green), var(--light-green));
   padding: 2rem 0;
@@ -1077,7 +1095,9 @@ body {
   box-shadow: var(--shadow-hover);
 }
 
-
+/* ============================= */
+/* Cart System Styles */
+/* ============================= */
 .cart-container {
   position: relative;
 }
@@ -1127,7 +1147,7 @@ body {
   50% { transform: scale(1.2); }
 }
 
-
+/* Cart Modal */
 .cart-modal {
   display: none;
   position: fixed;
@@ -1374,7 +1394,7 @@ body {
   box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
 }
 
-
+/* Cart Notification */
 .cart-notification {
   position: fixed;
   top: 100px;
@@ -1407,7 +1427,9 @@ body {
   font-weight: 600;
 }
 
-
+/* ============================= */
+/* Modern Navigation */
+/* ============================= */
 .main-nav {
   display: flex;
   background: var(--light-green);
@@ -1452,7 +1474,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-
+/* Dropdown Styling */
 .dropdown-container {
   position: relative;
   flex: 1;
@@ -1540,7 +1562,9 @@ body {
   }
 }
 
-
+/* ============================= */
+/* Hero Section */
+/* ============================= */
 .hero {
   height: 100vh;
   background: url("/Images/visualofproducts.jpg") no-repeat center center/cover;
@@ -1627,7 +1651,9 @@ body {
   box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
 }
 
-
+/* ============================= */
+/* Scrolling Reviews */
+/* ============================= */
 .reviews-wrapper {
   position: absolute;
   bottom: 30px;
@@ -1670,7 +1696,9 @@ body {
   }
 }
 
-
+/* ============================= */
+/* Animations */
+/* ============================= */
 .hidden {
   opacity: 0;
   transform: translateY(50px);
@@ -1683,7 +1711,9 @@ body {
   transform: translateY(0);
 }
 
-
+/* ============================= */
+/* Main Content */
+/* ============================= */
 main {
   min-height: 80vh;
   padding: 4rem 2rem;
@@ -1713,7 +1743,9 @@ main {
   line-height: 1.8;
 }
 
-
+/* ============================= */
+/* Scrolling Products Section */
+/* ============================= */
 .products-section {
   width: 100%;
   overflow: hidden;
@@ -1763,7 +1795,7 @@ main {
 
 .product-image {
   width: 120px;
-  height: 145px;
+  height: 120px;
   background: linear-gradient(135deg, var(--light-green), var(--primary-green));
   border-radius: 50%;
   margin: 0 auto 1.5rem;
@@ -1813,7 +1845,7 @@ main {
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
-
+/* Different product images */
 .product-box:nth-child(1) .product-image::before { content: '🌿'; }
 .product-box:nth-child(2) .product-image::before { content: '🏠'; }
 .product-box:nth-child(3) .product-image::before { content: '✈️'; }
@@ -1834,7 +1866,7 @@ main {
   }
 }
 
-
+/* Product Box Updates for Cart */
 .add-to-cart-btn {
   background: linear-gradient(45deg, var(--light-green), var(--primary-green));
   color: white;
@@ -1887,7 +1919,9 @@ main {
   color: var(--accent-orange);
 }
 
-
+/* ============================= */
+/* Responsive Design */
+/* ============================= */
 @media (max-width: 768px) {
   .main-nav {
     flex-direction: column;
@@ -2042,7 +2076,9 @@ main {
   }
 }
 
-
+/* ============================= */
+/* Accessibility */
+/* ============================= */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -2055,7 +2091,7 @@ main {
   }
 }
 
-
+/* Focus states for keyboard navigation */
 .main-nav a:focus,
 .dropdown-container section:focus,
 .btn:focus {
@@ -2063,7 +2099,9 @@ main {
   outline-offset: 2px;
 }
 
-
+/* ============================= */
+/* Products Page Styles */
+/* ============================= */
 .products-main {
   min-height: 100vh;
   padding: 2rem;
@@ -2163,6 +2201,12 @@ main {
   font-size: 0.9rem;
 }
 
+.product-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
 .product-btn {
   background: linear-gradient(45deg, var(--light-green), var(--primary-green));
   color: white;
@@ -2182,7 +2226,29 @@ main {
   background: linear-gradient(45deg, var(--primary-green), #1B5E20);
 }
 
+.learn-more-btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
 
+.learn-more-btn:hover {
+  background: var(--primary-green);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+}
+
+/* Responsive Products Grid */
 @media (max-width: 1024px) {
   .products-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -2232,7 +2298,9 @@ main {
   }
 }
 
-
+/* ============================= */
+/* About Page Styles */
+/* ============================= */
 .about-hero {
   height: 60vh;
   background: linear-gradient(135deg, var(--primary-green), var(--light-green));
@@ -2434,7 +2502,7 @@ main {
   box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
 }
 
-
+/* About Page Responsive */
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;
@@ -2467,7 +2535,9 @@ main {
   }
 }
 
-
+/* ============================= */
+/* Contact Page Styles */
+/* ============================= */
 .contact-hero {
   height: 50vh;
   background: linear-gradient(135deg, var(--accent-orange), #FF8A65);
@@ -2509,7 +2579,7 @@ main {
   align-items: start;
 }
 
-
+/* Contact Form Styles */
 .contact-form-card {
   background: white;
   padding: 3rem;
@@ -2607,6 +2677,7 @@ main {
   transform: none;
 }
 
+/* Contact Info Styles */
 .contact-info-card {
   background: white;
   padding: 2.5rem;
@@ -2651,6 +2722,7 @@ main {
   line-height: 1.5;
 }
 
+/* FAQ Links */
 .faq-links {
   background: rgba(76, 175, 80, 0.05);
   padding: 2rem;
@@ -2689,6 +2761,7 @@ main {
   margin: 0;
 }
 
+/* Social Media Section */
 .contact-social {
   background: var(--primary-green);
   padding: 4rem 2rem;
@@ -2749,6 +2822,7 @@ main {
   font-weight: 500;
 }
 
+/* Contact Page Responsive */
 @media (max-width: 968px) {
   .contact-container {
     grid-template-columns: 1fr;
@@ -2811,7 +2885,9 @@ main {
   }
 }
 
-
+/* ============================= */
+/* Donate Page Styles */
+/* ============================= */
 .donate-hero {
   height: 50vh;
   background: linear-gradient(135deg, var(--primary-green), var(--light-green));
@@ -2839,6 +2915,7 @@ main {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 }
 
+/* Impact Section */
 .impact-section {
   padding: 4rem 2rem;
   text-align: center;
@@ -2901,6 +2978,7 @@ main {
   font-size: 1.1rem;
 }
 
+/* Donation Section */
 .donation-section {
   padding: 4rem 2rem;
   background: white;
@@ -3046,6 +3124,7 @@ main {
   box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
 }
 
+/* Help Ways Section */
 .help-ways-section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -3116,6 +3195,7 @@ main {
   transform: translateY(-2px);
 }
 
+/* Transparency Section */
 .transparency-section {
   background: rgba(46, 125, 50, 0.05);
   padding: 4rem 2rem;
@@ -3182,6 +3262,7 @@ main {
   font-size: 1.1rem;
 }
 
+/* Donate Page Responsive */
 @media (max-width: 768px) {
   .donation-options {
     grid-template-columns: 1fr;
@@ -3225,7 +3306,9 @@ main {
   }
 }
 
-
+/* ============================= */
+/* Sponsor Page Styles */
+/* ============================= */
 .sponsor-hero {
   height: 50vh;
   background: linear-gradient(135deg, #1565C0, #1976D2);
@@ -3253,6 +3336,7 @@ main {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 }
 
+/* Benefits Section */
 .benefits-section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -3315,6 +3399,7 @@ main {
   line-height: 1.6;
 }
 
+/* Sponsorship Tiers */
 .tiers-section {
   padding: 4rem 2rem;
   background: white;
@@ -3480,6 +3565,7 @@ main {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Current Sponsors */
 .current-sponsors-section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -3565,6 +3651,7 @@ main {
   box-shadow: 0 8px 30px rgba(76, 175, 80, 0.4);
 }
 
+/* Partnership Process */
 .process-section {
   background: var(--primary-green);
   color: white;
@@ -3658,6 +3745,7 @@ main {
   box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
 }
 
+/* Sponsor Page Responsive */
 @media (max-width: 768px) {
   .sponsor-tiers {
     grid-template-columns: 1fr;
@@ -3698,32 +3786,4 @@ main {
   .cta-section {
     padding: 2rem 1.5rem;
   }
-}
-
-.missionimage {
-  border-radius: 15px;
-}
-
-.aboutusimage {
-  border-radius: 15px;
-}
-
-.learn-btn {
-  background: linear-gradient(45deg, var(--light-green), var(--primary-green));
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 0.5rem;
-  width: 100%;
-  box-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
-}
-
-.learn-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
 }

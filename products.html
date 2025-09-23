@@ -26,6 +26,7 @@
     <a href="About.html">About</a>
     <a href="index.html">Home</a>
     <a href="contacts.html">Contact</a>
+    
     <div class="dropdown-container">
       <section tabindex="0">Support Us</section>
       <div class="dropdown-content">
@@ -45,27 +46,30 @@
   
   <div class="products-grid-container">
     <div class="products-grid">
+      
       <div class="product-card hidden" style="--delay: 0.1s;">
-       <img src="/Images/products1.jpg" height="43%" width="100%" alt="bioshieldspray">
+        <img src="/Images/products1.jpg" height="43%" width="100%" alt="bioshieldspray">
         <div class="product-info">
           <h3>BioShield Spray</h3>
           <p class="product-price">$24.99</p>
           <p class="product-description">Our flagship all-natural bug repellent spray. Perfect for daily protection.</p>
-          <button class="learn-btn">Learn More! </a></button>
+          <a href="bioshieldspray.html" class="learn-btn">Learn More!</a>
           <button class="product-btn add-to-cart-btn" data-name="BioShield Spray" data-price="24.99" data-image="">Add to Cart</button>
         </div>
       </div>
       
+      <!-- Family Pack -->
       <div class="product-card hidden" style="--delay: 0.2s;">
         <img src="/Images/productsimage2.jpg" height="43%" width="100%" alt="familypack">
         <div class="product-info">
           <h3>Family Pack</h3>
           <p class="product-price">$49.99</p>
           <p class="product-description">Value pack with 3 bottles. Save money while keeping the whole family protected.</p>
-          <button class="learn-btn">Learn More!</button>
+          <a href="familypack.html" class="learn-btn">Learn More!</a>
           <button class="product-btn add-to-cart-btn" data-name="Family Pack" data-price="49.99" data-image="">Add to Cart</button>
         </div>
       </div>
+      
       
       <div class="product-card hidden" style="--delay: 0.3s;">
         <img src="/Images/products3.jpg" height="45%" width="100%" alt="travelsize">
@@ -73,10 +77,11 @@
           <h3>Travel Size</h3>
           <p class="product-price">$12.99</p>
           <p class="product-description">Compact size perfect for travel, hiking, and on-the-go protection.</p>
-          <button class="learn-btn">Learn More!</button>
+          <a href="travelsize.html" class="learn-btn">Learn More!</a>
           <button class="product-btn add-to-cart-btn" data-name="Travel Size" data-price="12.99" data-image="">Add to Cart</button>
         </div>
       </div>
+      
       
       <div class="product-card hidden" style="--delay: 0.4s;">
         <img src="/Images/productimage4.jpg" height="43%" width="100%" alt="kidsformula">
@@ -84,21 +89,23 @@
           <h3>Kids Formula</h3>
           <p class="product-price">$19.99</p>
           <p class="product-description">Extra gentle formula specially designed for children's sensitive skin.</p>
-          <button class="learn-btn">Learn More!</button>
+          <a href="kidsformula.html" class="learn-btn">Learn More!</a>
           <button class="product-btn add-to-cart-btn" data-name="Kids Formula" data-price="19.99" data-image="">Add to Cart</button>
         </div>
       </div>
       
+      <!-- Extra Strength -->
       <div class="product-card hidden" style="--delay: 0.5s;">
-        <img src="/Images/productrow2img1.jpg" height="43%" width="100%" alt="ExtraStrenght">
+        <img src="/Images/productrow2img1.jpg" height="43%" width="100%" alt="ExtraStrength">
         <div class="product-info">
           <h3>Extra Strength</h3>
           <p class="product-price">$29.99</p>
           <p class="product-description">Maximum protection for extreme outdoor conditions and heavy bug areas.</p>
-          <button class="learn-btn">Learn More!</button>
+          <a href="extrastrength.html" class="learn-btn">Learn More!</a>
           <button class="product-btn add-to-cart-btn" data-name="Extra Strength" data-price="29.99" data-image="">Add to Cart</button>
         </div>
       </div>
+      
       
       <div class="product-card hidden" style="--delay: 0.6s;">
         <img src="/Images/productrow2img2.jpg" height="45%" width="100%" alt="CitrusBlend">
@@ -106,10 +113,11 @@
           <h3>Citrus Blend</h3>
           <p class="product-price">$22.99</p>
           <p class="product-description">Fresh citrus scent with natural oils. Great for everyday use.</p>
-          <button class="learn-btn">Learn More!</button>
+          <a href="citrusblend.html" class="learn-btn">Learn More!</a>
           <button class="product-btn add-to-cart-btn" data-name="Citrus Blend" data-price="22.99" data-image="">Add to Cart</button>
         </div>
       </div>
+      
       
       <div class="product-card hidden" style="--delay: 0.7s;">
         <img src="/Images/productrow2img3.jpg" height="45%" width="100%" alt="LavenderCalm">
@@ -117,7 +125,7 @@
           <h3>Lavender Calm</h3>
           <p class="product-price">$24.99</p>
           <p class="product-description">Soothing lavender scent that repels bugs while promoting relaxation.</p>
-          <button class="learn-btn">Learn More!</button>
+          <a href="lavender.html" class="learn-btn">Learn More!</a>
           <button class="product-btn add-to-cart-btn" data-name="Lavender Calm" data-price="24.99" data-image="">Add to Cart</button>
         </div>
       </div>
@@ -128,10 +136,10 @@
           <h3>Outdoor Pro</h3>
           <p class="product-price">$34.99</p>
           <p class="product-description">Professional-grade formula for serious outdoor enthusiasts and workers.</p>
-          <button class="learn-btn">Learn More!</button>
+          <a href="outdoorpro.html" class="learn-btn">Learn More!</a>
           <button class="product-btn add-to-cart-btn" data-name="Outdoor Pro" data-price="34.99" data-image="">Add to Cart</button>
         </div>
-      /<div>
+      </div>
     </div>
   </div>
 </main>
@@ -170,9 +178,14 @@
   </div>
 </div>
 
+<script>src="shared-cart.js"</script>
+
+
 <script>
+// Cart functionality
 let cart = [];
 
+// DOM elements
 const cartBtn = document.getElementById('cartBtn');
 const cartModal = document.getElementById('cartModal');
 const closeCart = document.getElementById('closeCart');
@@ -184,6 +197,7 @@ const clearCartBtn = document.getElementById('clearCart');
 const checkoutBtn = document.getElementById('checkoutBtn');
 const cartNotification = document.getElementById('cartNotification');
 
+// Intersection Observer for animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -197,6 +211,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 
+// Cart Modal Functions
 function openCartModal() {
   cartModal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -207,6 +222,7 @@ function closeCartModal() {
   document.body.style.overflow = 'auto';
 }
 
+// Add to cart function
 function addToCart(product) {
   const existingItem = cart.find(item => item.name === product.name);
   
@@ -224,17 +240,20 @@ function addToCart(product) {
   showNotification();
 }
 
+// Remove from cart function
 function removeFromCart(productId) {
   cart = cart.filter(item => item.id !== productId);
   updateCartUI();
 }
 
+// Update cart UI
 function updateCartUI() {
   updateCartCount();
   updateCartItems();
   updateCartTotal();
 }
 
+// Update cart count
 function updateCartCount() {
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   cartCount.textContent = totalItems;
@@ -246,6 +265,7 @@ function updateCartCount() {
   }
 }
 
+// Update cart items display
 function updateCartItems() {
   if (cart.length === 0) {
     cartItems.innerHTML = `
@@ -261,7 +281,7 @@ function updateCartItems() {
       <div class="cart-item" data-id="${item.id}">
         <div class="cart-item-info">
           <h4>${item.name}</h4>
-          <p class="cart-item-price">${item.price}</p>
+          <p class="cart-item-price">$${item.price}</p>
         </div>
         <div class="cart-item-controls">
           <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">−</button>
@@ -275,6 +295,7 @@ function updateCartItems() {
   }
 }
 
+// Update quantity
 function updateQuantity(productId, change) {
   const item = cart.find(item => item.id === productId);
   if (item) {
@@ -287,11 +308,13 @@ function updateQuantity(productId, change) {
   }
 }
 
+// Update cart total
 function updateCartTotal() {
   const total = cart.reduce((sum, item) => sum + (parseFloat(item.price) * item.quantity), 0);
   cartTotal.textContent = total.toFixed(2);
 }
 
+// Show notification
 function showNotification() {
   cartNotification.classList.add('show');
   setTimeout(() => {
@@ -299,32 +322,37 @@ function showNotification() {
   }, 2000);
 }
 
+// Clear cart
 function clearCart() {
   cart = [];
   updateCartUI();
 }
 
+// Checkout function
 function checkout() {
   if (cart.length === 0) return;
   
   const total = cart.reduce((sum, item) => sum + (parseFloat(item.price) * item.quantity), 0);
-  alert(`Checkout total: ${total.toFixed(2)}\n\nThis is a demo. In a real implementation, you would integrate with a payment processor like Stripe, PayPal, or similar.`);
+  alert(`Checkout total: $${total.toFixed(2)}\n\nThis is a demo. In a real implementation, you would integrate with a payment processor like Stripe, PayPal, or similar.`);
   
   clearCart();
   closeCartModal();
 }
 
+// Event Listeners
 cartBtn.addEventListener('click', openCartModal);
 closeCart.addEventListener('click', closeCartModal);
 clearCartBtn.addEventListener('click', clearCart);
 checkoutBtn.addEventListener('click', checkout);
 
+// Close modal when clicking outside
 cartModal.addEventListener('click', function(e) {
   if (e.target === cartModal) {
     closeCartModal();
   }
 });
 
+// Add to cart button listeners
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains('add-to-cart-btn')) {
     const button = e.target;
@@ -336,6 +364,7 @@ document.addEventListener('click', function(e) {
     
     addToCart(product);
     
+    // Button feedback
     const originalText = button.textContent;
     button.textContent = 'Added!';
     button.style.background = 'var(--light-green)';
@@ -347,12 +376,14 @@ document.addEventListener('click', function(e) {
   }
 });
 
+// Keyboard navigation
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && cartModal.style.display === 'flex') {
     closeCartModal();
   }
 });
 
+// Make functions globally available
 window.updateQuantity = updateQuantity;
 window.removeFromCart = removeFromCart;
 </script>
